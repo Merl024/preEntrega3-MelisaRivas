@@ -1,0 +1,61 @@
+html{
+    scroll-behavior: smooth;
+}
+.mr-2{
+    margin-right: 20px;
+}
+.bg-coz{
+    background: rgb(94, 15, 26);
+}
+.img{
+    width: auto;
+    height: 50px;
+
+}
+.btn-color, .btn-color-con{
+    border-color: rgb(48, 145, 139) ;
+    border-width: 2px;
+    color: white;
+} .btn-color:hover{
+    background-color: rgba(48, 165, 140, 0.698);
+}
+.btn-color-con{
+    background-color: rgba(48, 165, 140, 0.698);
+    color: black;
+}.btn-color-con:hover{
+    background-color: none;
+    border-color:rgba(48, 165, 140, 0.698) ;
+}
+.titulos{
+    color:rgb(35, 137, 106) ;
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+}
+.subTitulos, .inText, .labelText{
+    text-align: left;
+    padding-top: 0;
+    padding: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.inText{
+    font-weight: normal;
+    font-size:25px;
+}
+.labelText{
+    font-weight: lighter;   
+    font-size: 20px;
+    margin: 0;
+    padding: 9px;
+}
+.border{
+    border-radius: 2rem;
+    margin: 1px;;
+}
+/* .darkMode{
+    color: white;
+    background-color:black;
+} */

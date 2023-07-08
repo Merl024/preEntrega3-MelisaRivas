@@ -1,26 +1,29 @@
-// //Capturando los inputs en variables para poder hacer uso de ellas
-// //Variables de la seccion de masas
-// let conLb = document.getElementById("conLb")
-// let lbInput = document.getElementById('lbInput')
-// let lbInputValor = parseFloat(lbInput.value)
-// let btnConvertirLb = document.getElementById("btnConvertirLb")
-// let conG = document.getElementById("conG")
-// let gInput = document.getElementById("gInput")
-// let btnConvertirG = document.getElementById("btnConvertirG")
-// let conKg = document.getElementById("conKg")
-// let kgInput = document.getElementById("kgInput")
-// let btnConvertirKg = document.getElementById("btnConvertirKg")
-// let resultados = document.getElementById("resultados")
-// const masa = []
-// let libras = 2.2 
-// let toneladas = 100
-// //Creando funciones para la seccion de masas
-// function lbAKg(kg){
-//     let conversionKg = masa.reduce((lbInput, libras) => lbInput * libras, 0)
-//     btnConvertirLb.addEventListener("click", () =>{
-//         let conLb = document.createElement("p")
-//         conLb.innerHTML = `<p>Tu resultado es ${conversionKg}</p>`
-//         console.log(`${lbInput}lb a kilogramos son ${conversionKg}kg`)
-//     })
+//variables
+// libras a kg
+let formLb = document.querySelector("#conLb")
+let lbInput = document.querySelector("#lbInput")
+let btnConvertirLb = document.querySelector("#btnConvertirLb")
+let resultadoKg = document.querySelector("#resultadoKg")
+
+// //Creando clases constructoras con los datos de las conversiones
+// //seccion de masa
+// class Masa{
+//     constructor(){
+//         this.libraKg = 2.2
+//         this.toneladaL = 1000
+//         this.libraG = 453.6
+//     }
 // }
-// // lbAKg()
+
+//functions 
+function lbAkg(){
+    let conversionKg = lbInput.value / 2.2
+    // console.log(conversionKg.toFixed(2))
+    resultadoKg.innerHTML = 
+    `<p class="m-2 inText">${lbInput.value}lb a kilogramos son ${conversionKg.toFixed(2)}kg</p>`
+}
+
+//EVENTOS:
+btnConvertirLb.addEventListener("click", ()=>{
+    lbAkg()
+})

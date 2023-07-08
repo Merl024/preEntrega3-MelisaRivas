@@ -45,33 +45,36 @@
           <h1 class="titulos">CONVERTIDOR</h1>
           <!-- Inputs para los convertidores de masa -->
           <h2 class="subTitulos">Convertidor de masas</h2>
-          <div class="row p-0 d-flex border">
+          <div class="row p-0 d-flex">
             <!-- LIBRAS A KG -->
             <div class="col-xl-4 col-8">
               <h3 class="inText mt-0">Libras (lb) a Kilogramos (kg)</h3>
               <form id="conLb" class="m-3 mt-0">
-                <label for="lbInput" class="label"> Ingrese las libras (lb) que quiera convertir:</label>
-                <input type="number" class="form-control" id="lbInput" aria-describedby="libras">
+                <label for="lbInput" class="labelText"> Ingrese las libras (lb) que quiera convertir:</label>
+                <input type="text" class="form-control" id="lbInput" aria-describedby="libras">
               </form>
-              <button type="submit" id="btnConvertirLb" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <button type="text" id="btnConvertirLb" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoKg">
+                
+              </div>
             </div>
             <!-- Convertidor de LB A G -->
             <div class="col-xl-4 col-8">
               <h3 class="inText mt-0">Libras (lb) a gramos (g)</h3>
               <form id="conG" class="m-3 mt-0">
                 <label for="gInput" class="labelText"> Ingrese las libras (lb) que quiera convertir:</label>
-                <input type="number" class="form-control" id="gInput" aria-describedby="gramos">
+                <input type="text" class="form-control" id="gInput" aria-describedby="gramos">
               </form>
-              <button type="submit" id="btnConvertirG" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <button type="texts" id="btnConvertirG" class="btn btn-color-con mt-0 m-3"> Convertir</button>
             </div>
             <!-- Convertidor de t a kg -->
             <div class="col-xl-4 col-8">
               <h3 class="inText mt-0">Toneladas (t) a Kilogramos (kg)</h3>
               <form id="conKg" class="m-3 mt-0">
                 <label for="kgInput" class="labelText"> Ingrese las kilogramos (kg) que quiera convertir:</label>
-                <input type="number" class="form-control" id="kgInput" aria-describedby="kg">
+                <input type="text" class="form-control" id="kgInput" aria-describedby="kg">
               </form>
-              <button type="submit" id="btnConvertirKg" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <button type="text" id="btnConvertirKg" class="btn btn-color-con mt-0 m-3"> Convertir</button>
             </div>
             <div class="container">
               <div class="row" id="resultados">

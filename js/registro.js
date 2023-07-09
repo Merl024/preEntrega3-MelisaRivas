@@ -29,9 +29,6 @@ function mostrarRegistro(array){
     for(dato of array){
         nuevoDatoDiv = document.createElement("div")
         nuevoDatoDiv.className = "col-12 col-xl-4"
-        if (dato.imc === null) {
-            continue;
-        }
         if(dato.imc < 18.5){
         nuevoDatoDiv.innerHTML = 
         `<div id="dato${dato.id}" class="card m-3 ">

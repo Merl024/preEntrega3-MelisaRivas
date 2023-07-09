@@ -40,9 +40,13 @@
               </nav>
           </div>
       </header>
-      <main class="row">
+      <main class="container">
         <h1 class="titulos">Registro de pesos</h1>
-        <P class="inText m-3 mt-0" style="text-align: center;">Te ayudaremos a que mantengas rastro de tu peso. Por cada vez que ingreses tu peso te calcularemos el IMC</P>
+        <P class="inText m-3 mt-0 mb-0" >Te ayudaremos a que mantengas rastro de tu peso. Por cada vez que ingreses tu peso te calcularemos el IMC</P>
+        <p class="inText mt-0">En caso de no tener tu peso o altura en las unidades necesarias, puedes ir al convertidor y pasarlo a las unidades requeridas</p>
+        <p class="inText">
+          <strong> Nota: Tu IMC debe estar entre 18.5 y 24.9.</strong>
+        </p>
         <div class="row dFlex">
           <div class="col-xl-6 col-12 border m-2">
             <!-- FORM PARA PODER AGREGAR DATOS AL REGISTRO DE PESO -->
@@ -57,6 +61,7 @@
               <input type="text" name="" id="fechaI" class="form-control" placeholder="dd/mm/aaaa">
               
               <button type="text" class="btn btn-color-con m-3" id="agregarDatoBtn" > Guardar</button>
+              <div class="inText" id="noRegistrado"></div>
             </form>
           </div>
         </div>

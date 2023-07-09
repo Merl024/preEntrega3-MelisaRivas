@@ -29,59 +29,121 @@
                             <a class="nav-link active" href="pages/registro.html">Registro de pesos</a>
                           </li>
                         </ul>
-                        <!-- <ul class="mr-2 mb-0">
-                          <select id="selectTema" class="form-select form-select-sm" aria-label=".form-select-sm example">
-                            <option selected>Selecciona:</option>
-                            <option value="1">Dark mode</option>
-                            <option value="2" id="opLightMode">Light mode</option>
-                          </select>
-                        </ul> -->
                     </div>
                 </nav>
             </div>
         </header>
-        <main class="row">
+        <main class="container">
           <!--EMPEZAMOS ESTRUCTURANDO LA PAGINA DE CONVERTIDORES-->
           <h1 class="titulos">CONVERTIDOR</h1>
+          <!-- SECION DE MASAS -->
           <!-- Inputs para los convertidores de masa -->
           <h2 class="subTitulos">Convertidor de masas</h2>
-          <div class="row p-0 d-flex">
+          <div class="row p-0 d-flex mt-2" style="display: flex; justify-content: space-evenly;">
             <!-- LIBRAS A KG -->
-            <div class="col-xl-4 col-8">
-              <h3 class="inText mt-0">Libras (lb) a Kilogramos (kg)</h3>
+            <div class="col-xl-4 col-12 border m-1">
+              <h3 class="inText mt-2">Libras (lb) a Kilogramos (kg)</h3>
               <form id="conLb" class="m-3 mt-0">
                 <label for="lbInput" class="labelText"> Ingrese las libras (lb) que quiera convertir:</label>
                 <input type="text" class="form-control" id="lbInput" aria-describedby="libras">
               </form>
               <button type="text" id="btnConvertirLb" class="btn btn-color-con mt-0 m-3"> Convertir</button>
-              <div id="resultadoKg">
-                
-              </div>
+              <div id="resultadoKg"></div>
             </div>
             <!-- Convertidor de LB A G -->
-            <div class="col-xl-4 col-8">
-              <h3 class="inText mt-0">Libras (lb) a gramos (g)</h3>
+            <div class="col-xl-4 col-12 border m-1">
+              <h3 class="inText mt-2">Libras (lb) a gramos (g)</h3>
               <form id="conG" class="m-3 mt-0">
                 <label for="gInput" class="labelText"> Ingrese las libras (lb) que quiera convertir:</label>
                 <input type="text" class="form-control" id="gInput" aria-describedby="gramos">
               </form>
               <button type="texts" id="btnConvertirG" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoG"></div>
             </div>
             <!-- Convertidor de t a kg -->
-            <div class="col-xl-4 col-8">
-              <h3 class="inText mt-0">Toneladas (t) a Kilogramos (kg)</h3>
+            <div class="col-xl-4 col-12 border m-1 mt-2">
+              <h3 class="inText mt-2">Kilogramos (kg) a toneladas (t)</h3>
               <form id="conKg" class="m-3 mt-0">
-                <label for="kgInput" class="labelText"> Ingrese las kilogramos (kg) que quiera convertir:</label>
+                <label for="kgInput" class="labelText"> Ingrese los kilogramos (kg) que quiera convertir:</label>
                 <input type="text" class="form-control" id="kgInput" aria-describedby="kg">
               </form>
               <button type="text" id="btnConvertirKg" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoT"></div>
             </div>
-            <div class="container">
-              <div class="row" id="resultados">
-
-              </div>
+          </div>  
+          
+          <!-- SECCION DE LONGITUDES -->
+          <!-- Inputs para los convertidores de longitudes -->
+          <h2 class="subTitulos">Convertidor de longitudes</h2>
+          <div class="row p-0 d-flex mt-2" style="display: flex; justify-content: space-evenly;">
+            <!-- PIES A M -->
+            <div class="col-xl-4 col-12 border m-1">
+              <h3 class="inText mt-2">Pies (ft) a metros (m)</h3>
+              <form id="conM" class="m-3 mt-0">
+                <label for="mInput" class="labelText"> Ingrese la medida en pies (ft) que quiera convertir:</label>
+                <input type="text" class="form-control" id="mInput" aria-describedby="metros">
+              </form>
+              <button type="text" id="btnConvertirM" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoM"></div>
             </div>
-          </div>
+            <!-- m a ft -->
+            <div class="col-xl-4 col-12 border m-1">
+              <h3 class="inText mt-2">Metros (m) a pies (ft)</h3>
+              <form id="conFt" class="m-3 mt-0">
+                <label for="ftInput" class="labelText"> Ingrese los metros (m) que quiera convertir:</label>
+                <input type="text" class="form-control" id="ftInput" aria-describedby="pies">
+              </form>
+              <button type="texts" id="btnConvertirFt" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoFt"></div>
+            </div>
+            <!-- cm a inch-->
+            <div class="col-xl-4 col-12 border m-1 mt-2">
+              <h3 class="inText mt-2">Centimetros (cm) a pulgadas (inch)</h3>
+              <form id="conI" class="m-3 mt-0">
+                <label for="iInput" class="labelText"> Ingrese los centimetros (cm) que quiera convertir:</label>
+                <input type="text" class="form-control" id="iInput" aria-describedby="inch">
+              </form>
+              <button type="text" id="btnConvertirI" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoI"></div>
+            </div>
+          </div>  
+          
+          <!-- SECCION DE VOLUMEN -->
+          <!-- Inputs para los convertidores de volumen -->
+          <h2 class="subTitulos">Convertidor de volumen</h2>
+          <div class="row p-0 d-flex mt-2" style="display: flex; justify-content: space-evenly;">
+            <!-- SECCION DE VOLUMEN -->
+            <!-- L A GAL -->
+            <div class="col-xl-4 col-12 border m-1">
+              <h3 class="inText mt-2">Litros (l) a galones (gal)</h3>
+              <form id="conL" class="m-3 mt-0">
+                <label for="lInput" class="labelText"> Ingrese los litros (lb) que quiera convertir:</label>
+                <input type="text" class="form-control" id="lInput" aria-describedby="litros">
+              </form>
+              <button type="text" id="btnConvertirL" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoGal"></div>
+            </div>
+            <!-- L A OZ -->
+            <div class="col-xl-4 col-12 border m-1 mt-2">
+              <h3 class="inText mt-2">Litros (l) a onzas (t)</h3>
+              <form id="conOz" class="m-3 mt-0">
+                <label for="ozInput" class="labelText"> Ingrese los litros (l) que quiera convertir:</label>
+                <input type="text" class="form-control" id="ozInput" aria-describedby="onzas">
+              </form>
+              <button type="text" id="btnConvertirOz" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoOz"></div>
+            </div>
+            <!-- OZ A ML -->
+            <div class="col-xl-4 col-12 border m-1">
+              <h3 class="inText mt-2">Onzas (oz) a mililitros (ml)</h3>
+              <form id="conMl" class="m-3 mt-0">
+                <label for="mlInput" class="labelText"> Ingrese las onzas (oz) que quiera convertir:</label>
+                <input type="text" class="form-control" id="mlInput" aria-describedby="mililitros">
+              </form>
+              <button type="texts" id="btnConvertirMl" class="btn btn-color-con mt-0 m-3"> Convertir</button>
+              <div id="resultadoMl"></div>
+            </div>
+          </div>  
         </main>
     </div>
     <!--SCRIPT DE JS-->

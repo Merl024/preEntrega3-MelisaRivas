@@ -32,7 +32,7 @@ html{
 }
 
 .btn-color-con{
-    background-color: rgba(48, 165, 140, 0.698);
+    background-color: rgba(48, 165, 140, 0.278);
     color: black;
 }.btn-color-con:hover{
     background-color: none;
@@ -47,7 +47,10 @@ html{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
 }
+h2{
+    color:rgb(12, 80, 61) ;
 
+}
 .subTitulos, .inText, .labelText{
     text-align: left;
     padding-top: 0;
@@ -59,6 +62,7 @@ html{
 .inText{
     font-weight: normal;
     font-size:25px;
+    text-align: center;
 }
 
 .labelText{
@@ -101,6 +105,9 @@ html{
     background-color:rgba(94, 15, 26, 0.424);
     border-color: rgb(94, 15, 26);
 
+}
+.btn{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* .darkMode{

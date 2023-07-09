@@ -52,7 +52,7 @@ function mostrarRegistro(array){
             </div>
         </div>`
         }
-        else if( dato.imc >= 25){
+        if( dato.imc > 24.9 ){
         nuevoDatoDiv.innerHTML = 
         `<div id="dato${dato.id}" class="card m-3 ">
             <div class="card-body">

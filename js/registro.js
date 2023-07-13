@@ -101,7 +101,7 @@ function agregarDato(registro){
     let alturaI = document.getElementById("alturaI")
     let fechaI = document.getElementById("fechaI")
 
-    const nuevoDato = new Registro(registro.length + 1, pesoI.value, alturaI.value, fechaI.value)
+    const nuevoDato = new Registro(registro.length + 1, parseFloat(pesoI.value), parseFloat(alturaI.value), fechaI.value)
     registro.push(nuevoDato)
     localStorage.setItem("registro", JSON.stringify(registro))
     
